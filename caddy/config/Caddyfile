@@ -1,0 +1,6 @@
+forfun.dev.test {
+  tls /etc/caddy/cert/forfun.dev.test.pem /etc/caddy/cert/forfun.dev.test-key.pem
+  root * /application/statamic-peak/public
+  file_server
+  php_fastcgi php-fpm:9000
+}
